@@ -1,0 +1,37 @@
+\documentclass[10pt, notitlepage,a4paper]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english, polish]{babel}
+\let\babellll\lll
+\let\lll\relax
+\usepackage{amssymb,url}
+\usepackage{ntheorem,tikz}
+\usepackage{graphicx,lmodern}
+\newcommand*\ruleline[1]{\par\noindent\raisebox{.8ex}{\makebox[\linewidth]{\hrulefill\hspace{1ex}\raisebox{-.8ex}{#1}\hspace{1ex}\hrulefill}}}
+\usetikzlibrary{calc,matrix,arrows}
+\usepackage{algorithmicx,algorithm}
+\usepackage{fixltx2e}
+\usepackage[noend]{algpseudocode}
+\MakeRobust{\Call}
+\pagestyle{empty}
+%----------------------Marginesy------------
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{2mm}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\xdotminus}[2]{%
+  \ooalign{\hidewidth$\vcenter{\hbox{$#1\dot{}$}}$\hidewidth\cr$#1-$\cr}%
+}
+\providecommand{\dotminus}{\mathbin{\mathpalette\xdotminus\relax}}
+
+%%%%%%%%%%%%%%%%%%
+\theoremheaderfont{\normalfont\bfseries}
+\theoremseparator{.}
+\theorembodyfont{\normalfont\upshape}
+\theoremstyle{plain}
+
+\theoremindent1em
+\newtheorem{zadanie}{Zadanie \hspace{-0.4em}}
+
+\newtheorem{zadanieW}{Zadanie W\hspace{-0.4em}}  
